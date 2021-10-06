@@ -90,19 +90,16 @@
                             <div class="col-md-4">
                               Nama : {{ $order->employee->first_name }}
                             </div>
-                            <div class="col-md-4">
-                              Lokasi : {{ $order->lokasi->name }}
-                            </div>
+
                             <div class="col-md-4">
                               Pembayaran : {{ $order->payment->bank }}{{ $order->payment->an!=null ? ' | '.$order->payment->an:''}}{{ $order->payment->norek != null ? ' | '.$order->payment->norek:''}}
                             </div>
-                          </div>
-                          <div class="row">
-
-                            <div class="col-md-4">
-                              Note : <br>
-                              {{ $order->note }}
+                            <br>
+                            <br>
+                            <div style="text-align: center">
+                                Terimkasih ..
                             </div>
+                          </div>
                           </div>
                           </div>
                           <!-- /.card-body -->
